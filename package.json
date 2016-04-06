@@ -1,0 +1,23 @@
+{
+  "name": "ldd-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "browser-sync": "^2.11.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify": "0.0.7",
+    "nodemailer": "^2.3.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
