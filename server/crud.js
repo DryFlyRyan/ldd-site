@@ -17,17 +17,14 @@ function createUser(userEmail, userName) {
   })
   .then(function(user) {
     if (user.length < 1) {
-      console.log("no user");
       users().insert({
         email: userEmail,
         name: userName
       }, 'id')
       .then(function(user) {
-        console.log(user[0].id);
-        resolve(user[0].id);
+        return user[0].id;
       })
     } else {
-      console.log('userID = ', user[0].id);
       return user[0].id;
     }
   })
